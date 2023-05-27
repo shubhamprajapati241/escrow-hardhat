@@ -1,13 +1,15 @@
 body {
   background-color: #eee;
   display: flex;
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
 }
 
-.contract, .existing-contracts {
+.contract,
+.existing-contracts {
   margin: 20px;
+  margin-left: 80px;
   display: inline-block;
-  padding: 40px;
+  padding: 10px;
   border: 1px solid #ddd;
   background-color: #fff;
 }
@@ -67,4 +69,21 @@ input[type="text"] {
 .existing-contract .complete {
   color: #5aa75a;
   text-align: center;
+}
+
+.spinner {
+  animation: spin infinite 1s linear;
+  margin-right: 5px;
+
+  /*You can increase or decrease the timer (5s) to 
+     increase or decrease the speed of the spinner*/
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
